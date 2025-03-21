@@ -13,6 +13,7 @@ data class Motorista( // motorista e carro '-'
     val cnh: String,
     val email: String,
     val celular: String,
+    val cep: String,
     val rua: String,
     val bairro: String,
     val cidade: String,
@@ -22,6 +23,7 @@ data class Motorista( // motorista e carro '-'
     val modelo: String,
     val ano: Year,
     val cor: String,
-    val kmAtual: Int
+    val kmAtual: Int,
+    val sincronizado: Boolean = false
 
 )
