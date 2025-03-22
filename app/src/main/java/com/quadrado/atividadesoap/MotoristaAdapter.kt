@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class MotoristaAdapter(private val listaMotoristas: MutableList<Motorista>) :
@@ -39,6 +40,16 @@ class MotoristaAdapter(private val listaMotoristas: MutableList<Motorista>) :
         holder.tv_marca_modelo_cor_ano.text = marca_modelo_cor_ano
         holder.tv_placa.text = motorista.placa
         holder.tv_km.text = "KMs rodados: ${motorista.kmAtual}"
+
+        if (!motorista.sincronizado) {
+            holder.tv_nome_celular.setTextColor(
+                ContextCompat.getColor(holder.itemView.context, R.color.vermelho)
+            )
+        } else {
+            holder.tv_nome_celular.setTextColor(
+                ContextCompat.getColor(holder.itemView.context, R.color.verde)
+            )
+        }
     }
 
     override fun getItemCount(): Int {
