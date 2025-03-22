@@ -2,7 +2,6 @@ package com.quadrado.atividadesoap
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.time.Year
 
 @Entity
 data class Motorista( // motorista e carro '-'
@@ -21,7 +20,7 @@ data class Motorista( // motorista e carro '-'
     val placa: String,
     val marca: String,
     val modelo: String,
-    val ano: Year,
+    val ano: Int,
     val cor: String,
     val kmAtual: Int,
     val sincronizado: Boolean = false
