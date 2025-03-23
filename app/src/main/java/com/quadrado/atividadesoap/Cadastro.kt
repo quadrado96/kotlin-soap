@@ -34,9 +34,6 @@ class Cadastro : AppCompatActivity() {
             insets
         }
 
-       fun onCreateOptionsMenu(menu: Menu?): Boolean {
-            return false
-        }
 
         val nome = findViewById<EditText>(R.id.et_nome)
         val cpf = findViewById<EditText>(R.id.et_cpf)
@@ -89,6 +86,10 @@ class Cadastro : AppCompatActivity() {
 
             finish()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        return false
     }
 
     private fun buscarCep(cep: String) {

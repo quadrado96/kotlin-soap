@@ -10,7 +10,7 @@ interface MotoristaDAO {
     @Insert
     fun salvar(m: Motorista)
 
-    @Query("SELECT * FROM Motorista ORDER BY id")
+    @Query("SELECT * FROM Motorista ORDER BY nome")
     fun listarMotoristas(): List<Motorista>
 
 }
