@@ -1,11 +1,12 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/imgb_sincronizar"
         android:contentDescription="sincronizar"
         android:icon="@android:drawable/ic_popup_sync"
         android:title="Botão"
-        android:showAsAction="always"
+        app:showAsAction="always"
 
         />
 

@@ -28,7 +28,7 @@ class MotoristaAdapter(private val listaMotoristas: MutableList<Motorista>) :
         val motorista = listaMotoristas[position]
 
         val nome_celular = "${motorista.nome} - ${motorista.celular}"
-        val email_cpf_cnh = "${motorista.email} - CPF: ${motorista.cpf} - CNH: ${motorista.cnh}"
+        val email_cpf_cnh = "${motorista.email} - CPF: ${motorista.cpf}\nCNH: ${motorista.cnh}"
         val endereco = "${motorista.rua} ${motorista.bairro} / ${motorista.cidade} - ${motorista.estado}"
 
         val marca_modelo_cor_ano = "${motorista.marca} ${motorista.modelo} ${motorista.cor} - ${motorista.ano}"
