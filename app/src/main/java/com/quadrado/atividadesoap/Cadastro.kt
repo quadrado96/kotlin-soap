@@ -1,6 +1,7 @@
 package com.quadrado.atividadesoap
 
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
@@ -31,6 +32,10 @@ class Cadastro : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+       fun onCreateOptionsMenu(menu: Menu?): Boolean {
+            return false
         }
 
         val nome = findViewById<EditText>(R.id.et_nome)
