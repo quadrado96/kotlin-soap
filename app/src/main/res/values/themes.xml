@@ -1,9 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Atividadesoap" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.Atividadesoap" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">#B00020</item>
+        <item name="colorPrimaryDark">#7F0000</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
     </style>
-
-    <style name="Theme.Atividadesoap" parent="Base.Theme.Atividadesoap" />
 </resources>

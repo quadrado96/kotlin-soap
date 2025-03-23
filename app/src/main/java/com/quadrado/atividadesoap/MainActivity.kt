@@ -2,6 +2,8 @@ package com.quadrado.atividadesoap
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +27,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+
+        
+
         lista_motoristacarro = findViewById(R.id.list_motoristacarro)
 
         val activityCadastro = Intent(this, Cadastro::class.java)
@@ -43,6 +48,23 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         listarMotoristas()
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.imgb_sincronizar -> {
+                Toast.makeText(this, "nada por enquanto '-'", Toast.LENGTH_LONG).show()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+
 
     private fun listarMotoristas() {
         val lista = Database.getInstance(this)?.MotoristaDAO()?.listarMotoristas()
