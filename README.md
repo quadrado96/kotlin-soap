@@ -26,7 +26,7 @@ The application demonstrates how to consume SOAP-based web services using Kotlin
 This application was developed as an academic project for the Advanced Mobile Development course at Centro Universitário Moura Lacerda (CUML). The goal was to apply theoretical knowledge in a practical setting, enhancing understanding of mobile development principles.
 
 
-# Cliente SOAP em Kotlin
+# Cliente SOAP em Kotlin - Português
 
 Este projeto é um aplicativo móvel desenvolvido como parte da disciplina de **Desenvolvimento Mobile Avançado** do **Centro Universitário Moura Lacerda (CUML)**.
 
